@@ -80,6 +80,7 @@ EXAMPLES = r"""
     geertsky.bambini.generate_minimal_install_urls:
         rpmdb_reimport: True
         distribution:
+            arch: "x86_64"
             name: "rocky"
             version: 8
             repo:
