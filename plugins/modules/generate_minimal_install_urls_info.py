@@ -13,7 +13,7 @@ from ansible.module_utils.basic import AnsibleModule
 
 __metaclass__ = type
 
-DOCUMENTATION = r'''
+DOCUMENTATION = r"""
 module: generate_minimal_install_urls
 
 short_description: "This module generates urls to all the rpms needed for a minimal install of a distribution of choice."
@@ -72,9 +72,9 @@ options:
                             - The url of the repository.
                         required: True
                         type: str
-'''
+"""
 
-EXAMPLES = r'''
+EXAMPLES = r"""
 ---
 - name: Retrieve urls
     geertsky.generate_minimal_install_urls:
@@ -92,9 +92,9 @@ EXAMPLES = r'''
 
 - ansible.builtin.debug:
     var: result.rpm_urls
-'''
+"""
 
-RETURN = r'''
+RETURN = r"""
 ---
 rpm_urls:
     description:
@@ -108,7 +108,7 @@ rpm_urls:
 
         http://dl.rockylinux.org/$contentdir/$releasever/BaseOS/$basearch/os/Packages/y/yum-4.7.0-19.el8.noarch.rpm
         http://dl.rockylinux.org/$contentdir/$releasever/BaseOS/$basearch/os/Packages/z/zlib-1.2.11-25.el8.x86_64.rpm
-'''
+"""
 
 
 def run_module():
