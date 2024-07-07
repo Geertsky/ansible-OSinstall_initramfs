@@ -77,7 +77,7 @@ options:
 EXAMPLES = r"""
 ---
 - name: Retrieve urls
-    geertsky.generate_minimal_install_urls:
+    geertsky.bambini.generate_minimal_install_urls:
         rpmdb_reimport: True
         distribution:
             name: "rocky"
