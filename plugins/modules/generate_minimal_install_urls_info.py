@@ -82,7 +82,7 @@ EXAMPLES = r"""
         distribution:
             arch: "x86_64"
             name: "rocky"
-            version: 8
+            version: "9"
             repo:
                 type: "metalink"
                 url: "https://mirrors.rockylinux.org/metalink?arch=$basearch&repo=BaseOS-$releasever"
