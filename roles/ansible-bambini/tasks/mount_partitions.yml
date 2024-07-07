@@ -3,7 +3,7 @@
   ansible.posix.mount:
     path: /sysroot
     src: LABEL=root
-    fstype: xfs
+    fstype: ext4
     state: mounted
 
 - name: "Mount /sysroot/boot"

@@ -40,7 +40,7 @@
   community.general.lvol:
     vg: vg.rh
     lv: root
-    size: 100%FREE
+    size: 100%VG
 
 - name: "Create a ext4 filesystem for boot partition"
   community.general.filesystem:
@@ -62,9 +62,9 @@
     dev: /dev/vg.rh/swap
     force: true
 
-- name: "Create a xfs filesystem on /dev/vg.rh/root"
+- name: "Create a ext4 filesystem on /dev/vg.rh/root"
   community.general.filesystem:
-    fstype: xfs
+    fstype: ext4
     opts: '-L root'
     dev: /dev/vg.rh/root
     force: true
